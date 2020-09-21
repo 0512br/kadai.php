@@ -46,7 +46,7 @@ $color = ["red", "black", "white"];
 $result = array_merge($animal, $color);
 print_r($result) ."\n";
 
-//現在のUNIXタイムスタンプを返す
+//現在のUNIXタlイムスタンプを返す
 echo "現在のタイムスタンプ: ".time() ."\n";
 $Today = time();
 $nextWeek = time() + (7 * 24 * 60 * 60);
@@ -59,11 +59,11 @@ echo 'Next Year: ' .$nextYear ."\n";
 date_default_timezone_set("UTC");
 $Today = mktime(0, 0, 0, 9, 13, 2020);
 echo "Sep 13, 2020 is on a " .date("l", mktime(0, 0, 0, 9, 13, 2020)) ."\n";
-echo '今日のタイムスタンプ: ' .$Today ."\n";
+echo '2020年9月13日のタイムスタンプ: ' .$Today ."\n";
 
 // ローカルの日にち、時刻を書式化する
 date_default_timezone_set("UTC"); //デフォルトの設定
-echo 'Today: ' .date('Y/m/d', $Today) ."\n";
-echo 'Next Week: ' .date('Y/m/d', $nextWeek) ."\n";
-echo 'Next Year: ' .date('Y/m/d', $nextYear) ."\n";
+echo 'Today: ' .date('Y-m-d', $Today) ."\n";
+echo 'Next Week: ' .date('Y-m-d', $nextWeek) ."\n";
+echo 'Next Year: ' .date('Y-m-d', $nextYear) ."\n";
 ?>

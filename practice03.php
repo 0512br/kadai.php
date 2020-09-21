@@ -16,7 +16,7 @@ for ($i = 0; $i <= 10000; $i++) {
 echo $total ."\n";
 
 //3
-$fruits = ["Apple", "Banana", "Watermelon", "Orange", "Grape"];
+$fruits = array("Apple", "Banana", "Watermelon", "Orange", "Grape");
 foreach($fruits as $fruit){
     echo $fruit ."\n";
 }
